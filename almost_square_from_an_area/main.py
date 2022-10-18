@@ -1,6 +1,6 @@
 from rectangleData import rectangleData
 
-
+# takes an area and gives the 2 demensions that will represent the closest to a square shape 
 def findClosestSqr(area):
     area = float(area) # int case for rounding after decimal
     areaData =  rectangleData(area)
@@ -25,14 +25,14 @@ def findClosestSqr(area):
 def main():
     isWord = True
     while(isWord):
-        userArea = input("Type an area:")
+        userArea = input("Type an area: ")
         try: # if error then not number
             userArea = float(userArea)
             isWord = False
             findClosestSqr(userArea)
         except:
             print("Not a number")
+    input("Press enter exit")
 
 
-if '__main__':
-    main()
+main()

@@ -12,6 +12,6 @@ class rectangleData:
 
     def toString(self):
         print("\nArea:" + str(self.area) + 
-        ", Length:" + str(self.dem1) + 
-        ", Width:" + str(self.dem2) + 
-        ", Remaining:" + str(self.decimal))
+        " | Length:" + str(self.dem1) + 
+        " | Width:" + str(self.dem2) + 
+        " | Remaining:" + str(self.decimal))
