@@ -29,5 +29,6 @@ def main():
     #changing ascii list to text
     arrOfAscii = uI.setAsciiList()
     asciiToString(arrOfAscii)
+    input("Press \"Enter\" to exit")
 
 main()
