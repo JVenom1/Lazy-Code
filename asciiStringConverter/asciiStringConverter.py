@@ -1,5 +1,7 @@
-
 # "" -> []
+from userInput import userInput
+
+
 def stringToAscii(string, i=0, arrOfAsciiValues=[]):
 
     if i == len(string):
@@ -16,6 +18,16 @@ def asciiToString(asciiList, string="", i=0):
         string += chr(asciiList[i])
         asciiToString(asciiList, string, i+1)
 
-# demo data
-stringToAscii("Hello World")
-asciiToString([87, 111, 114, 108, 100, 32, 72, 101, 108, 108, 111])
+# changing text to ascii
+def main():
+    uI = userInput
+    sentence = uI.setSentance() # makes user type a sentance
+    stringToAscii(sentence)
+    
+    print() #new line
+    
+    #changing ascii list to text
+    arrOfAscii = uI.setAsciiList()
+    asciiToString(arrOfAscii)
+
+main()
