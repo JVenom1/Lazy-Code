@@ -1,5 +1,5 @@
 # Lazy-Code
-Code I write when I'm too lazy to do it myself
+Code I write when I'm too lazy to do it myself.
 
 Each folder is its own program.
 
