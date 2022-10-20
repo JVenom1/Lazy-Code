@@ -13,7 +13,7 @@ def stringToAscii(string, i=0, arrOfAsciiValues=[]):
 # [] -> ""
 def asciiToString(asciiList, string="", i=0): 
     if i == len(asciiList):
-        print(string)
+        print("From Ascii to sentance: "+string)
     else:
         string += chr(asciiList[i])
         asciiToString(asciiList, string, i+1)
