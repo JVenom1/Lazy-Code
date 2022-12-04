@@ -32,7 +32,7 @@ def main():
             findClosestSqr(userArea)
         except:
             print("Not a number")
-    input("Press enter exit")
+    input("Press \"Enter\" to exit")
 
 
 main()
