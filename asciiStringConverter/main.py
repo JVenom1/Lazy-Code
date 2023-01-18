@@ -3,7 +3,6 @@ from userInput import userInput
 
 
 def stringToAscii(string, i=0, arrOfAsciiValues=[]):
-
     if i == len(string):
         print(arrOfAsciiValues)
     else:
@@ -11,7 +10,9 @@ def stringToAscii(string, i=0, arrOfAsciiValues=[]):
         stringToAscii(string, i+1, arrOfAsciiValues)
 
 # [] -> ""
-def asciiToString(asciiList, string="", i=0): 
+
+
+def asciiToString(asciiList, string="", i=0):
     if i == len(asciiList):
         print("From Ascii to sentance: "+string)
     else:
@@ -19,16 +20,19 @@ def asciiToString(asciiList, string="", i=0):
         asciiToString(asciiList, string, i+1)
 
 # changing text to ascii
+
+
 def main():
     uI = userInput
-    sentence = uI.setSentance() # makes user type a sentance
+    sentence = uI.setSentance()  # makes user type a sentance
     stringToAscii(sentence)
-    
-    print() #new line
-    
-    #changing ascii list to text
+
+    print()  # new line
+
+    # changing ascii list to text
     arrOfAscii = uI.setAsciiList()
     asciiToString(arrOfAscii)
     input("\nPress \"Enter\" to exit")
+
 
 main()
