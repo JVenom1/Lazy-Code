@@ -30,6 +30,8 @@ def findClosestSqr():
             if areaData.dem1 == int(areaData.dem1) and minimum > areaData.dem1:
                 minimum = areaData.dem1
 
+    areaData.dem1 = areaData.area
+    areaData.dem2 = 1
     areaData.toString()
     return -1  # prime
 
